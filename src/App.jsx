@@ -13,7 +13,10 @@ function App() {
   };
 
   return (
-    <div className={`App ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
+    <div
+      className={`App ${isDarkMode ? 'dark-mode' : 'light-mode'}`}
+      isDarkMode={isDarkMode}
+    >
       <BrowserRouter>
         <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
         <Routes>

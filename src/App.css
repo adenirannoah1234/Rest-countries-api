@@ -11,14 +11,21 @@ body {
   background-color: hsl(0, 0%, 98%);
 }
 
+html,body{
+  width: 100%
+
+}
+
 .light-mode {
   background-color: hsl(0, 0%, 98%);
   color: black;
+  
 }
 
-.dark-mode {
+.dark-mode body {
   background-color: hsl(207, 26%, 17%);
   color: white;
+  width: 100%;
 }
 
 .dark-mode{
@@ -202,60 +209,22 @@ nav{
   gap: 0.6rem;
 }
 
-.countries{
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  padding: 80px;
-  gap: 3rem;
-  /* position: relative; */
-  color: hsl(200, 15%, 8%);
-  
-}
+ .countries{
+ display: grid;
+ grid-template-columns: repeat(4,1fr);
+ grid-gap: 10px;
+ padding: 70px;
+
+
+ }
 
 .country{
-  /* height: 300px; */
-  /* width: 220px; */
-  min-width: 220px;
-  background-color: hsl(0, 0%, 100%);
+  min-width: 200px;
   cursor: pointer;
-
+  background-color: hsl(0, 0%, 100%);
 }
-
-.iceland{
-  width: 100%;
-  height: 130px;
-}
-
-.Afghanistan{
-  width: 100%;
-  height: 130px;
-}
-
-.Albania{
-  width: 100%;
-  height: 130px;
-}
-
-.AlandIsland{
-  width: 100%;
-  height: 130px;
-}
-
-.Algeria{
-  width: 100%;
-  height: 130px;
-}
-
-.brazil{
-  width: 100%;
-  height: 130px;
-}
-
-.usa{
-  width: 100%;
-  height: 130px;
-}
-
+  
+ 
 .germany{
   width: 100%;
   height: 130px;
@@ -281,8 +250,6 @@ nav{
   font-size: 13px;
   color: hsl(200, 15%, 8%);
 }
-
-
 .main-details{
   margin-top: 60px;
   padding-top: 60px;
