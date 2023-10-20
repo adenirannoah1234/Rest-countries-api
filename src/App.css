@@ -476,7 +476,7 @@ nav{
 }
 .dropdown{
   margin-right: 90px;
-  width: 180px;
+  max-width: 180px;
 }
 
 
@@ -514,6 +514,6 @@ nav h1{
   }
 
   .dropdown{
-    margin-right: 70px;
+    margin-right: 50px;
   }
 }
