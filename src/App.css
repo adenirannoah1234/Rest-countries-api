@@ -102,6 +102,15 @@ background-color: hsl(209, 23%, 22%);
 
 .dark-mode .main-details button{
   background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%); ;
+}
+
+.dark-mode h1{
+  color: hsl(0, 0%, 100%);
+}
+
+.dark-mode .details ul, h4{
+  color: hsl(0, 0%, 100%);
 }
 
 nav{
@@ -212,14 +221,14 @@ nav{
  .countries{
  display: grid;
  grid-template-columns: repeat(4,1fr);
- grid-gap: 10px;
- padding: 70px;
+ grid-gap: 30px;
+ padding: 70px; 
 
 
  }
 
 .country{
-  min-width: 200px;
+  max-width: 300px;
   cursor: pointer;
   background-color: hsl(0, 0%, 100%);
 }
@@ -349,4 +358,142 @@ nav{
  font-size: 14px;
  cursor: pointer;
 }
+
+@media screen and (max-width:992px){
+  .countries{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 75px;
+    grid-gap: 30px;
+  }
+
+  .details{
+    gap: 2rem;
+  }
+
+  .detlist{
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width:768px){
+  .countries{
+    padding: 50px;
+  }
+  .main-searchdiv{
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+  nav{
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+  .details{
+    padding: 10px;
+    padding-top: 50px;
+  }
+
+  .main-details button{
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width:576px){
+  .countries{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .main-searchdiv{
+    /* gap: 5px; */
+    flex-direction: column;
+    padding-right: 75px;
+    padding-left: 0px;
+    gap: 30px;
+
+    
+  }
+
+  .dropdown{
+     margin-right: 228px; 
+  }
+
+  .details{
+    flex-direction: column;
+    padding: 55px;
+  }
+
+  .detimage{
+    width: 100%;
+  }
+
+  .main-details button{
+    margin-left: 53px;
+  }
+}
+
+
+@media screen and (max-width:480px){
+  .countries{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    padding: 90px;
+  }
+
+  nav{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .main-searchdiv{
+    padding-right: 10px;
+  }
+}
+@media screen and (max-width:375px){
+.countries{
+  padding: 50px;
+}
+
+
+.form-control{
+  width: 100%;
+  
+}
+.main-searchdiv{
+  padding-left: 10px;
+}
+.search-div{
+  width: 330px;
+}
+.dropdown{
+  margin-right: 120px;
+  width: 180px;
+}
+
+.dropdown-content{
+  width: 180px;
+}
+
+nav{
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 30px;
+}
+
+nav h1{
+  font-size: 16px;
+}
+
+.darkmode-toggle{
+  font-size: 13px;
+}
+
+.details{
+  padding: 40px;
+}
+
+.main-details button{
+  margin-left: 40px;
+}
+}
+
    
