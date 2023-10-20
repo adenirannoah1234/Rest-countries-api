@@ -508,4 +508,12 @@ nav h1{
 }
 }
 
-   
+@media screen and (max-width:375px){
+  .search-div{
+    width: 250px;
+  }
+
+  .dropdown{
+    margin-right: 70px;
+  }
+}
