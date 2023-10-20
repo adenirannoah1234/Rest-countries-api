@@ -109,7 +109,15 @@ background-color: hsl(209, 23%, 22%);
   color: hsl(0, 0%, 100%);
 }
 
-.dark-mode .details ul, h4{
+.dark-mode .details ul{
+  color: hsl(0, 0%, 100%);
+}
+
+.dark-mode h4{
+  color: hsl(0, 0%, 100%);
+}
+
+.dark-mode .detchild{
   color: hsl(0, 0%, 100%);
 }
 
@@ -128,6 +136,7 @@ nav{
   padding-bottom: 20px;
   background-color: hsl(0, 0%, 100%);
   color: hsl(200, 15%, 8%);
+  box-shadow:hsl(0, 0%, 100%) ;
 }
 
 
@@ -228,7 +237,7 @@ nav{
  }
 
 .country{
-  max-width: 300px;
+  max-width: 700px;
   cursor: pointer;
   background-color: hsl(0, 0%, 100%);
 }
@@ -450,7 +459,8 @@ nav{
 }
 @media screen and (max-width:375px){
 .countries{
-  padding: 50px;
+  padding: 20px;
+  margin-top: 50px;
 }
 
 
@@ -462,12 +472,14 @@ nav{
   padding-left: 10px;
 }
 .search-div{
-  width: 330px;
+  width: 280px;
 }
 .dropdown{
-  margin-right: 120px;
+  margin-right: 90px;
   width: 180px;
 }
+
+
 
 .dropdown-content{
   width: 180px;
