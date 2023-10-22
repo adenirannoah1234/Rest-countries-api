@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 
 const Home = () => {
   const [dropDown, setDropDown] = useState(false);
+  const [originalCountries, setOriginalCountries] = useState([]);
   const [countries, setCountries] = useState([]);
   const [filterRegion, setFilterRegion] = useState([]);
 
@@ -14,6 +15,7 @@ const Home = () => {
   const getAllCountries = async () => {
     const response = await fetch('https://restcountries.com/v3.1/all');
     const data = await response.json();
+    setOriginalCountries(data);
     setCountries(data);
     console.log(data);
   };
@@ -59,7 +61,7 @@ const Home = () => {
 
   const handleSearch = (event) => {
     const searchTerm = event.target.value.toLowerCase();
-    const filteredCountries = countries.filter((country) =>
+    const filteredCountries = originalCountries.filter((country) =>
       country.name.common.toLowerCase().includes(searchTerm)
     );
     setCountries(filteredCountries);
